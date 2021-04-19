@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="/Assets/img/bitcoin_3838998.ico">
+    <title>Bit Stream</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- project style sheet -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <section id="navbarHead">
+        <div class="parallax"></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand col-1" href="#">Bit Stream</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-xl-7" id="navbarSupportedContent">
+                    <a class="col-lg-2 btn btn-light btn-outline-dark home m-auto " aria-current="page"
+                        href="#">Home</a>
+                    <a class="col-lg-3 btn btn-light btn-outline-dark liveReport m-auto " aria-current="page"
+                        href="#">Live Reports</a>
+                    <a class="col-lg-2 btn btn-light btn-outline-dark about m-auto " aria-current="page"
+                        href="#">About</a>
+                </div>
+                <div class="wrapper1 col-lg-4 p-2">
+                    <div class="search-input">
+                        <a href="" target="_blank" hidden></a>
+                        <input class="search" type="text" placeholder="Type to search..">
+                        <div class="autocom-box">
+                        </div>
+                        <div class="icon"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="searchAutoComplete display">
+                        <div class="acpWrap">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="cryptoDisplay">
+        <div class="container">
+            <div id="coinData" class="row"></div>
+        </div>
+        <section id="serachResult">
+            <div id="loading"></div>
+            <div id="searchData" class="row"></div>
+        </section>
+
+        <!-- modal dialog box for live report-->
+        <div class="modal fade container-fluid" id="liveReportCoinSelect" tabindex="-1" role="dialog"
+            aria-labelledby="liveReportCoinSelectLabel" aria-hidden="true" data-backdrop="false" data-keyboard="false">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="liveReportCoinSelectLabel">Coin Select</h4>
+                    </div>
+                    <h5 class="p-2">Select Coins:</h5>
+                    <p class="p-2">Select one to five coins</p>
+                    <div class="modal-body p-2">
+                    </div>
+                    <div class="modal-footer">
+                        <button id="saveCoinModal" type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="/js/jquery.js"></script>
+        <!-- Js bootstarp script -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+        <!-- plugins -->
+        <script src="https://kit.fontawesome.com/f54ba562a2.js" crossorigin="anonymous"></script>
+        <script src="/js/circle-progress.min.js"></script>
+        <script src="/js/jquery.canvasjs.min.js"></script>
+        <!-- project js -->
+        <script src="/js/index.js"></script>
+</body>
+
+</html>

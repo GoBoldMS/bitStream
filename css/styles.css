@@ -1,0 +1,236 @@
+/* General Styling  */
+html,
+body {
+  background-color: #f7f6e7;
+  font-family: "Open Sans", sans-serif !important;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+ 
+.navbar {
+  border: solid black 0.1px;
+  margin-bottom: 1%;
+}
+
+.yonatanImg {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-large;
+}
+
+/* Loading Styling ----------------->*/
+
+#loading {
+  background: url("/Assets/img/spinner2.gif") no-repeat center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999999;
+}
+
+/* Coin Display Styling ------------>*/
+.card {
+  margin: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.coinImg {
+  width: 25px;
+  height: 25px;
+}
+
+/* Parallax IMG --------------> */
+.parallax {
+  /* The image used */
+  background-image: url("/Assets/img/external-content.duckduckgo.com.jpg");
+
+  /* Set a specific height */
+  min-height: 150px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* On/off toggle css ------------------> */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  padding: 2px;
+  left: 85%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Search Bar Styling ----------------------> */
+
+.wrapper .search-input {
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.12);
+}
+
+.search-input input {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-input .active input {
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autoCom-box {
+  padding: 0;
+  opacity: 1;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input .active .autoCom-box {
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autoCom-box li {
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input .active .autoCom-box li {
+  display: block;
+}
+.autoCom-box li:hover {
+  background: #efefef;
+}
+
+.search-input .icon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 10px;
+  width: 70px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.searchAutoComplete {
+  top: 51px;
+  display: block;
+  position: absolute;
+  left: 10px;
+  width: 97%;
+  max-height: 200px;
+  border: 1px solid #d0d0d0;
+  border-radius: 0 0 4px 4px;
+  margin-top: -2px;
+  margin-left: -1px;
+  margin-right: -1px;
+  z-index: 25;
+  box-shadow: 0 2px 4px rgb(0, 0, 0/10%);
+  overflow: hidden;
+}
+
+.acpWrap {
+  box-sizing: border-box;
+  border-bottom-right-radius: 3%;
+  border-bottom-left-radius: 3%;
+  display: block;
+  max-height: 200px;
+  background-color: #fff;
+  overflow: auto;
+  overflow-x: hidden;
+  position: static;
+}
+
+.searchHover:hover {
+  background-color: #dddddd;
+}
+
+/* modal styling---------------------------> */
+
+.modal-content {
+  width: 400px;
+}
